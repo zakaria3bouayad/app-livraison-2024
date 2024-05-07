@@ -35,6 +35,4 @@ public class Client {
 	}
 	private String email;
 	private String password;
-	
-
 }
