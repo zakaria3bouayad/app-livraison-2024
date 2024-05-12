@@ -6,5 +6,7 @@ import org.springframework.stereotype.Repository;
 import cours.iir4.livraison.model.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client ,Long > {
+	
+	
 
 }

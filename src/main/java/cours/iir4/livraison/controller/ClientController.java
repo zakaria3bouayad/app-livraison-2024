@@ -2,12 +2,7 @@ package cours.iir4.livraison.controller;
 
 import java.util.List;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import cours.iir4.livraison.model.Client;
 import cours.iir4.livraison.service.ClientService;
@@ -30,9 +25,9 @@ public class ClientController {
 	}
 	
 	@GetMapping("/{id}")
-	public Client getClient(long idClient) {
+	public Client getClient(@PathVariable long id) {
 		
-		return cs.getClient(idClient);
+		return cs.getClient(id);
 	}
 	
 	
